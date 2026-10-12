@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flexbox Cards Practice</title>
+  <style>
+    /* AAPKI FLEXBOX CSS YAHAN AAYEGI */
+    .card-container{
+        background-color:whitesmoke;
+        display: flex;
+        gap: 2rem;
+        margin: 20px;
+    }
+    .card{
+        flex:1;
+        background-color: rgb(168, 171, 143);
+        display: flex;
+        flex-direction: column;
+    }
+    .btn{
+        background-color: rgb(23, 141, 184);
+        border-radius: 10px;
+        margin: 5px;
+        color: white;
+        font-size: smaller;
+    }
+    .card-description{
+        flex-grow: 1 ;
+    }
+    .card-footer{
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    @media( max-width: 768px){
+       .card-container{
+        flex-direction: column;
+       }
+        
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    
+    <div class="card">
+      <div class="card-image"></div>
+      <h3 class="card-title">Understanding Blockchain</h3>
+      <p class="card-description">
+        Learn how blocks, hashes, and peer-to-peer networks form a decentralized system.
+      </p>
+      <div class="card-footer">
+        <span>By Alex</span>
+        <button class="btn">Read</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image"></div>
+      <h3 class="card-title">Flexbox Fundamentals</h3>
+      <p class="card-description">
+        Master main axes, cross axes, and space distribution in modern CSS layouts. This description is significantly longer to test vertical alignment and flex-grow on various devices!
+      </p>
+      <div class="card-footer">
+        <span>By Sarah</span>
+        <button class="btn">Read</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image"></div>
+      <h3 class="card-title">Web3 &amp; Smart Contracts</h3>
+      <p class="card-description">
+        Build and deploy your first Solidity contract on a public testnet.
+      </p>
+      <div class="card-footer">
+        <span>By David</span>
+        <button class="btn">Read</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

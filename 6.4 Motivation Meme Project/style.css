@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+}
+h1{
+    text-transform: uppercase;
+    font-size : 3rem;
+}
+.poster{
+    margin: 50%;
+    margin-left:25%;
+    margin-right: 25%;
+    margin-top: 100px;
+    color :rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.motivational-img{
+    border : 5px solid white;
+    width:100%;
+}
